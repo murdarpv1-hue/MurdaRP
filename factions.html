@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MURDARP V2 – Factions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2e2e2e;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 20;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #333;
+      border-radius: 4px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .factions-container {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .faction {
+      display: flex;
+      background-color: rgba(27, 27, 27, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .faction img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .faction-description {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .faction-description h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+      color: #e74c3c;
+    }
+
+    .faction-description p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      .faction {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .faction img {
+        width: 100%;
+        height: auto;
+      }
+
+      .faction-description {
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MURDARP V2</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="factions.html">Factions</a>
+      <a href="about.html">About</a>
+      <a href="https://discord.com/invite/w6r85FwKVz" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <main class="factions-container">
+    <div class="faction">
+      <img src="https://wallpapercave.com/wp/wp8012965.jpg" alt="Gang 1">
+      <div class="faction-description">
+        <h2>The Aersio Family</h2>
+        <p>EDIT THIS</p>
+      </div>
+    </div>
+
+    <div class="faction">
+      <img src="https://wallpapercave.com/wp/wp8012982.jpg" alt="Gang 2">
+      <div class="faction-description">
+        <h2>Yakuza</h2>
+        <p>EDIT THIS</p>
+      </div>
+    </div>
+
+    <div class="faction">
+      <img src="https://wallpapercave.com/wp/wp5729074.jpg" alt="Gang 3">
+      <div class="faction-description">
+        <h2>Repears</h2>
+        <p>EDIT THIS</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

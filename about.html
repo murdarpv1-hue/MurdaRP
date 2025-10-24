@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MURDARP V2 – About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2e2e2e;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 20;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #333;
+      border-radius: 4px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .page-heading {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .page-heading h1 {
+      font-size: 2.8em;
+      color: #e74c3c;
+      margin: 0;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .about-box {
+      background-color: rgba(27, 27, 27, 0.5);
+      padding: 40px;
+      border-radius: 8px;
+      max-width: 1100px;
+      width: 100%;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .about-box h2 {
+      font-size: 2em;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
+    .staff-gallery {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 30px;
+      justify-content: flex-start;
+      padding-bottom: 10px;
+    }
+
+    .staff-gallery::-webkit-scrollbar {
+      display: none;
+    }
+
+    .staff-gallery {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .staff-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 180px;
+      flex-shrink: 0;
+    }
+
+    .staff-member img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .staff-member p {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .page-heading h1 {
+        font-size: 2em;
+      }
+
+      .about-box h2 {
+        font-size: 1.6em;
+      }
+
+      .logo {
+        font-size: 1.2em;
+      }
+
+      .nav-links a {
+        font-size: 0.9em;
+        padding: 4px 8px;
+      }
+
+      .staff-member {
+        width: 140px;
+      }
+
+      .staff-member img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    .rules-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.rules-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.rule-box {
+  background-color: rgba(27, 27, 27, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.rule-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.rule-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.rule-box p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.rule-box a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rule-box a:hover {
+  background-color: #c0392b;
+}
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MURDARP V2</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="factions.html">Factions</a>
+      <a href="about.html">About</a>
+      <a href="https://discord.com/invite/w6r85FwKVz" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <div class="page-heading">
+    <h1>About</h1>
+  </div>
+
+  <section class="about-section">
+    <div class="about-box">
+      <h2>Meet the Staff</h2>
+      <div class="staff-gallery">
+        <div class="staff-member">
+          <img src="images/staff1.jpg" alt="Staff Member 1">
+          <p>Owner</p>
+        </div>
+        <div class="staff-member">
+          <img src="images/staff2.jpg" alt="Staff Member 2">
+          <p>Owner</p>
+        </div>
+        <div class="staff-member">
+          <img src="images/staff3.jpg" alt="Staff Member 3">
+          <p>Owner</p>
+        </div>
+        <div class="staff-member">
+          <img src="images/staff4.jpg" alt="Staff Member 4">
+          <p>Owner</p>
+        </div>
+        <div class="staff-member">
+          <img src="images/staff5.jpg" alt="Staff Member 5">
+          <p>Developer</p>
+        </div>
+      </div>
+      <section class="rules-section">
+  <div class="rules-container">
+    <div class="rule-box">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/law.png" alt="Server Rules Icon">
+      <h3>Server Rules</h3>
+      <p>Core guidelines for respectful, immersive roleplay across the city.</p>
+      <a href="https://docs.google.com/document/d/1gU_E12W81YMdc8mW0UC9pNuMn07bOThdpItc_oookaI/edit?usp=sharing" target="_blank">View Server Rules</a>
+    </div>
+
+    <div class="rule-box">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/security-checked.png" alt="Faction Rules Icon">
+      <h3>Faction Rules</h3>
+      <p>Detailed rules for gangs, law enforcement, and business factions.</p>
+      <a href="https://docs.google.com/document/d/1OYxopomtEIu3Ol2j3kzXHC_m8tL5oCt3HUdpKso6f1s/edit?usp=sharing" target="_blank">View Faction Rules</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </section>
+</body>
+</html>

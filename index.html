@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MURDARP V2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2e2e2e;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 20;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #333;
+      border-radius: 4px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .overlay-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(27, 27, 27, 0.5);
+      padding: 30px 50px;
+      border-radius: 8px;
+      text-align: center;
+      z-index: 2;
+      max-width: 80%;
+      color: #ffffff;
+    }
+
+    .overlay-box h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .overlay-box p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .content-section {
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+
+    .content-box {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .content-box h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #e74c3c;
+    }
+
+    .content-box p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .overlay-box h1 {
+        font-size: 1.8em;
+      }
+
+      .overlay-box p {
+        font-size: 1em;
+      }
+
+      .overlay-box {
+        padding: 20px 30px;
+      }
+
+      .nav-links a {
+        font-size: 0.9em;
+        padding: 4px 8px;
+      }
+
+      .logo {
+        font-size: 1.2em;
+      }
+    }
+  
+    .features-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  background-color: rgba(27, 27, 27, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 20px;
+  flex-shrink: 0;
+}
+
+.feature-description {
+  flex: 1;
+  padding: 20px;
+}
+
+.feature-description h3 {
+  margin-top: 0;
+  font-size: 1.6em;
+  color: #e74c3c;
+}
+
+.feature-description p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    margin: 20px auto 0;
+  }
+
+  .feature-description {
+    padding: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MURDARP V2</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="factions.html">Factions</a>
+      <a href="about.html">About</a>
+      <a href="https://discord.com/invite/w6r85FwKVz" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <div class="video-container" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="Files/welcome.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay-box">
+      <h1>WELCOME TO MURDARP</h1>
+      <p>Explore rules, join factions, and connect via Discord</p>
+    </div>
+  </div>
+
+<section class="features-section">
+  <div class="feature">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/shop.png" alt="Player Owned Businesses">
+    <div class="feature-description">
+      <h3>Player Owned Businesses</h3>
+      <p>Players can launch and manage their own businesses—from nightclubs and mechanic shops to law firms and corner stores—shaping the city’s economy with their vision. Set your own prices, hire staff, customize interiors, and build a reputation as the go-to spot in town. Whether you're running legit operations or fronting something shady, the city is yours to build.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/law.png" alt="Law Enforcement">
+    <div class="feature-description">
+      <h3>Law Enforcement</h3>
+      <p>Uphold the law and protect the city by joining one of several elite agencies: LSPD, State Troopers, Park Rangers, or the FIB. Each department offers unique responsibilities—from street patrols and traffic stops to federal investigations and wilderness enforcement. Rise through the ranks, specialize in tactical units or detective work, and shape the justice system your way.</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/crime.png" alt="Criminal Underworld">
+    <div class="feature-description">
+      <h3>Criminal Underworld</h3>
+      <p>Step into the shadows and carve your legacy in the city’s criminal underworld. Whether you're running a street crew, laundering money through a nightclub, or coordinating high-stakes heists with a cartel, the choices—and risks—are yours. Build networks, control turf, and rise through the ranks by outsmarting law enforcement and rival factions. From petty hustles to organized crime empires, the city rewards those bold enough to bend the rules and rewrite the game.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
